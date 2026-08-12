@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Exercícios</title>
+<title>Treino da Aninha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
@@ -223,7 +223,7 @@
 <div id="app" hidden>
   <div class="wrap">
     <header class="top">
-      <h1 class="title">Exercícios</h1>
+      <h1 class="title">Treino da Aninha</h1>
       <div class="top-actions">
         <button id="themeToggle" class="icon-btn" title="Alternar tema"></button>
         <button id="addExerciseBtn" class="btn-primary">
@@ -447,7 +447,7 @@ function renderDayCard(dia, isToday) {
   const titleEl = document.createElement("div");
   titleEl.className = "day-title" + (titulo ? " has-value" : "");
   titleEl.title = "Editar nome do treino";
-  titleEl.textContent = isRest ? "" : (titulo || "Exercícios");
+  titleEl.textContent = isRest ? "" : (titulo || "Treino da Aninha");
   titleEl.addEventListener("click", () => startEditDayTitle(dia.key, labelWrap, titleEl, titulo));
   labelWrap.appendChild(titleEl);
 
